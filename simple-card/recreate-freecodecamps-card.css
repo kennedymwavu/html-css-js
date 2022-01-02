@@ -1,0 +1,33 @@
+.whole-card {
+  width: 250px;
+}
+
+h4 {
+  text-transform: uppercase;
+  background-color: #e1dddd;
+  text-align: center;
+  padding: 10px;
+  font-size: 27px;
+}
+
+p {
+  font-style: italic;
+}
+
+.cardText {
+  margin-bottom: 30px;
+}
+
+.card-links {
+  opacity: 0.5;
+  color: black;
+  text-align: left;
+}
+
+.whole-card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-content {
+  padding: 10px;
+}
