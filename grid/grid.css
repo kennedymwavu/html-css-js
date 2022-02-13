@@ -1,0 +1,41 @@
+/* Remove default styling */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+}
+
+/* Target all the boxes and style them together: */
+[class ^="box-"] {
+  background-color: skyblue;
+  display: grid; /* trigger grid */
+  place-items: center; /* center the items */
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "A A A A    A A A A   A A A A"
+    "B B B B    B B B B   B B C C"
+    "B B B B    B B B B   B B C C";
+}
+
+.box-1 {
+  grid-area: A;
+}
+
+.box-2 {
+  grid-area: B;
+}
+
+.box-3 {
+  grid-area: C;
+}
