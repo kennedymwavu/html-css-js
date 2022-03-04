@@ -75,3 +75,51 @@ body {
   margin: 10px;
   border-radius: 5px;
 }
+
+.container2 {
+  height: 50vh;
+  color: white;
+  font-size: 170%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.container2 *{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.box-10 {
+  background-color: yellow;
+  grid-row-start: span 3;
+}
+
+.box-11 {
+  background-color: brown;
+  grid-row-start: span 2;
+}
+
+.box-12 {
+  background-color: blue;
+}
+
+.box-13 {
+  background-color: red;
+  grid-row-start: span 2;
+}
+
+.box-14 {
+  background-color: violet;
+  grid-row-start: span 3;
+}
+
+.box-15 {
+  background-color: black;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
