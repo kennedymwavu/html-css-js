@@ -11,32 +11,67 @@ body {
   width: 100%;
 }
 
-/* Target all the boxes and style them together: */
-[class ^="box-"] {
-  background-color: skyblue;
-  display: grid; /* trigger grid */
-  place-items: center; /* center the items */
+.container {
+  height: 50vh;
+  padding: 10px;
+  margin: auto;
+  color: white;
+  font-size: 150%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* column-gap: 10%;
+  row-gap: 10%; */
+  gap: 10%
 }
 
-.container {
-  height: 100vh;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "A A A A    A A A A   A A A A"
-    "B B B B    B B B B   B B C C"
-    "B B B B    B B B B   B B C C"
-    "B B B B    B B B B   B B C C";
+.container > *{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 .box-1 {
-  grid-area: A;
+  background-color: violet;
 }
 
 .box-2 {
-  grid-area: B;
+  background-color: yellow;
 }
 
 .box-3 {
-  grid-area: C;
+  background-color: green;
+}
+
+.box-4 {
+  background-color: red;
+}
+
+.box-5 {
+  background-color: blue;
+}
+
+.box-6 {
+  background-color: maroon;
+}
+
+.box-7 {
+  background-color: black;
+}
+
+.box-8 {
+  background-color: brown;
+}
+
+.box-9 {
+  background-color: gray;
+}
+
+.number {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
 }
